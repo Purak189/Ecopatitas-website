@@ -1,0 +1,14 @@
+<section class="dv-best-products">
+  <div class="container__primary">
+    <div class="dv-best-products__content">
+      <div class="dv-best-products__content-cards">
+        <div class="slider-best-products" *ngIf="cards.length > 0">
+          <div class="dv-best-products__content-cards__card" *ngFor="let card of cards" data-aos="fade-up">
+            <img [src]="card.image" alt="card" class="dv-best-products__content-cards__card__img" loading="lazy">
+            <h2>{{ card.title }}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

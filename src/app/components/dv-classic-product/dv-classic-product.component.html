@@ -1,0 +1,25 @@
+<section class="dv-fusion-product" id="promotions">
+  <div class="dv-fusion-product__content">
+    <h1>PARA MININOS</h1>
+
+    <div class="dv-fusion-product__content-cards container__primary">
+      <div class="slider-classic-product" *ngIf="cards.length > 0">
+        <div class="dv-fusion-product__content-cards__card" data-aos="fade-up" *ngFor="let card of cards">
+          <div class="dv-fusion-product__content-cards__card__img" [ngStyle]="{'background-image': 'url(' + card.bg + ')'}">
+            <img *ngIf="card.img_top_left" [src]="card.img_top_left" alt="decor-top-left" class="decor-img decor-img--top-left" />
+            <img *ngIf="card.img_top_right" [src]="card.img_top_right" alt="decor-top-right" class="decor-img decor-img--top-right" />
+            <img *ngIf="card.img_bottom_left" [src]="card.img_bottom_left" alt="decor-bottom-left" class="decor-img decor-img--bottom-left" />
+            <img *ngIf="card.img_bottom_right" [src]="card.img_bottom_right" alt="decor-bottom-right" class="decor-img decor-img--bottom-right" />
+
+            <img [src]="card.img" class="main-img" alt="card" />
+          </div>
+          <div class="dv-fusion-product__content-cards__card__text">
+            <h2>{{ card.title }}</h2>
+            <h3>s/.{{ card.price | number:'1.2-2'}}</h3>
+            <button class="btn-tertiary-card">COMPRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

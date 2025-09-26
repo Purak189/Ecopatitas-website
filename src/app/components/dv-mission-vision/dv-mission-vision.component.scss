@@ -1,0 +1,74 @@
+.dv-mission-vision{
+  padding: 80px 0;
+  width: 100%;
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 100%;
+
+    &-item:nth-child(2){
+      flex-direction: row-reverse;
+
+      .text-container{
+        left: 0;
+        right: auto;
+      }
+    }
+
+    &-item{
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      img{
+        width: 50%;
+        max-width: 865px;
+      }
+
+      .text-container{
+        position: absolute;
+        right: 0;
+        top: 25%;
+        width: 60%;
+        max-width: 865px;
+        padding: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        border: 1px solid #E2E8F0;
+        box-shadow: 0px 0px 10px 0px #00000012,0px 20px 25px -5px #0000001A;
+        background-color: white;
+        border-radius: 5px;
+        max-height: fit-content;
+        font-family: 'Montserrat', sans-serif;
+
+        @media (max-width: 1500px) {
+          padding: 24px;
+        }
+
+        h2{
+          font-weight: 800;
+          font-size: 32px;
+          color: #5B3C18;
+
+          @media (max-width: 1500px) {
+            font-size: 24px;
+          }
+        }
+
+        p{
+          font-size: 24px;
+          line-height: 160%;
+          color: #0F172A;
+          font-weight: 400;
+
+          @media (max-width: 1500px) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

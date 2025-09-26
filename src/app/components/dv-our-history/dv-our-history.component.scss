@@ -1,0 +1,53 @@
+.dv-our-history{
+  width: 100%;
+  padding: 160px 0 80px 0;
+  background-image: url("../../../assets/our-history/our-history-bg.svg");
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &__content{
+    width: 100%;
+
+    &__text{
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+
+      h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 100%;
+        color: #5B3C18;
+      }
+
+      p{
+        position: relative;
+        z-index: 100;
+        padding: 48px;
+        width: 60%;
+        max-width: 900px;
+        background-color: #ffffff;
+
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 160%;
+        color: #0F172A;
+
+        border: 1px solid #E2E8F0;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px #00000012,0px 20px 25px -5px #0000001A;
+      }
+    }
+  }
+
+  .chocolate{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+}

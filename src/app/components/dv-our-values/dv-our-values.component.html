@@ -1,0 +1,19 @@
+<section class="dv-our-values">
+  <div class="container__primary">
+    <div class="dv-our-values__content">
+      <img src="./assets/values/value-img.png" alt="Nuestros valores Imagen">
+
+      <div class="dv-our-values__content-text">
+        <h2>Nuestros valores</h2>
+
+        <div class="dv-our-values__content-text-values">
+          <div class="dv-our-values__content-text-values-value" *ngFor="let value of values" data-aos="fade-up" data-aos-duration="1000">
+            <img [src]="value.img" [alt]="value.title + ' icon'">
+            <h3>{{ value.title }}</h3>
+            <p>{{ value.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

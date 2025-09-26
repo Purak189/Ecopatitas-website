@@ -1,0 +1,42 @@
+.dv-type-selection{
+  width: 100%;
+  padding: 80px 0;
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+
+    h2{
+      font-weight: 800;
+      font-size: 32px;
+      color: #5B3C18;
+      text-align: center;
+    }
+  }
+
+  &__buttons{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+
+    &-card{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+
+      img{
+        max-height: 334px;
+      }
+
+      h3{
+        font-weight: 800;
+        font-size: 32px;
+        color: #5B3C18;
+      }
+    }
+  }
+}

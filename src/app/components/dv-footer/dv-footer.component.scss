@@ -1,0 +1,159 @@
+.footer {
+
+	padding-top: 24px;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	background-color: #5A3B17;
+
+	@media screen and (max-width: 1200px) {
+		padding: 32px 0;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		gap: 32px;
+
+		@media screen and (max-width: 1200px) {
+			flex-direction: column;
+			gap: 20px;
+			text-align: center;
+		}
+	}
+
+	&__logo {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 40px;
+
+		&__links {
+			display: flex;
+			gap: 20px;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				cursor: pointer;
+			}
+
+			@media screen and (max-width: 1200px) {
+				justify-content: center;
+				flex-direction: column;
+			}
+
+		}
+
+
+
+		@media screen and (max-width: 1200px) {
+			align-items: center;
+		}
+	}
+
+	&__list {
+		font-family: 'Avenir LT Std', sans-serif;
+		list-style: none;
+		font-weight: 750;
+		color: #fff;
+		font-size: 16px;
+
+
+		@media screen and (max-width: 1200px) {
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		li {
+			margin: 20px 0;
+			// font-family: "Inter", sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			// line-height: 16px;
+			cursor: pointer;
+			width: fit-content;
+			color: #E2E8F0;
+			transition: font-weight 0.3s ease-in-out, color 0.3s ease-in-out;
+      max-width: 300px;
+
+			&:hover {
+				color: #d6d5d3;
+				font-weight: 700;
+			}
+
+			@media screen and (max-width: 1200px) {
+				font-size: 14px;
+				width: auto;
+
+			}
+		}
+
+    a{
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: #FFAD33;
+        color: #5A3B17;
+        width: 37px;
+        height: 37px;
+        font-size: 26px;
+      }
+    }
+	}
+
+	&__social {
+
+		display: flex;
+		gap: 20px;
+		flex-direction: column;
+
+
+	}
+
+	&__social-item {
+		display: flex;
+		gap: 16px;
+		margin: 12px 0;
+
+		a {
+			color: #5A3B17;
+      background-color: #FFAD33 ;
+			font-size: 30px;
+			border-radius: 50%;
+			width: 42px;
+			height: 42px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		@media screen and (max-width: 1200px) {
+			justify-content: center;
+		}
+	}
+}
+
+.footer_description {
+	text-align: center;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #fff;
+	background-color: #2D4E15;
+	padding: 12px 0;
+
+
+	p {
+		font-family: 'Inter', sans-serif !important
+	}
+}

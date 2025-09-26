@@ -1,0 +1,284 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+	box-sizing: border-box;
+	touch-action: manipulation;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	overflow: hidden;
+	min-width: 320px;
+	background-color: #ffffff;
+	background-position: center;
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+
+	button {
+		width: 100%;
+	}
+}
+
+*,
+*:before,
+*:after {
+	// font-family: "Plus Jakarta Sans", sans-serif;
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+h1, h2, h3,
+ul {
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+p,
+a,
+li {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 140%;
+	letter-spacing: 0;
+}
+
+
+
+.container__primary {
+	max-width: 1530px;
+	margin: 0 auto;
+	position: relative;
+
+
+	@media (max-width: 600px) {
+		max-width: calc(100% - 32px);
+	}
+
+	@media (min-width: 600px) {
+		max-width: calc(600px - 32px);
+	}
+
+	@media (min-width: 768px) {
+		max-width: calc(768px - 62px);
+	}
+
+	@media (min-width: 992px) {
+		max-width: calc(992px - 32px);
+	}
+
+	@media (min-width: 1200px) {
+		max-width: 1072px;
+	}
+
+	@media (min-width: 1300px) {
+		max-width: 1284px;
+	}
+
+	@media (min-width: 1700px) {
+		max-width: 1650px;
+	}
+}
+
+button {
+	cursor: pointer;
+
+	background: #2D4E15;
+	font-family: "Montserrat", sans-serif;
+
+	display: flex;
+	height: 44px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border-radius: 32px;
+	gap: 10px;
+
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+  width: 100%;
+	max-width: 240px;
+	position: relative;
+  z-index: 1;
+	overflow: hidden;
+	transition: all 1s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #5B3C18;
+    transform: skewX(45deg);
+    transition: width 1s ease;
+    z-index: -1;
+  }
+
+  &:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 5px 17px -4px #2D4E15;
+  }
+
+  &:hover::before {
+    width: 250%;
+  }
+}
+
+.btn-secondary-card {
+	background: #C30032;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #2D4E15;
+    transform: skewX(45deg);
+    transition: width 1s ease;
+    z-index: -1;
+  }
+
+  &:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 5px 17px -4px #7c531f;
+  }
+
+}
+
+.btn-tertiary-card {
+  background: #592A62;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #8F092B;
+    transform: skewX(45deg);
+    transition: width 1s ease;
+    z-index: -1;
+  }
+
+  &:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 5px 17px -4px #7c531f;
+  }
+}
+
+.slick-slide {
+	width: auto;
+	/* Slick asignará automáticamente el ancho basado en slidesToShow */
+	box-sizing: border-box;
+}
+
+.slick-list {
+	width: 100%;
+	/* Slick asignará automáticamente el ancho basado en slidesToShow */
+
+	@media(max-width: 1024px) {
+		margin: 0;
+		padding: 0 !important;
+	}
+}
+
+.slick-track {
+  width: 100%;
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  gap: 30px;
+
+	@media(max-width: 1024px) {
+		gap: 0;
+	}
+
+	/* Los slides se anulan con flexbox */
+}
+
+// SLICK NEXT AND PREV BUTTONS FOR GALLERY
+.slick-prev,
+.slick-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: #000000;
+	padding: 0;
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.3s ease;
+  font-size: 18px;
+  border-radius: 50px;
+	color: #ffffff;
+  z-index: 999;
+
+  &::before {
+    display: none;
+  }
+
+  &:hover {
+    background: #F26522;
+    color: #ffffff;
+  }
+
+	@media(max-width: 1024px) {
+		top: 50%;
+    width: 40px;
+    height: 40px;
+	}
+
+	@media(max-width: 768px) {
+		top: 50%;
+	}
+
+}
+
+.slick-prev {
+
+  @media (max-width: 1024px) {
+    left: 5px;
+  }
+}
+
+.slick-next {
+
+  @media (max-width: 1024px) {
+    right: 5px;
+  }
+}
+
+
+li {
+	margin-left: 20px;
+}
+
+.text-primary {
+	color: #F26522;
+	font-size: 100px;
+}

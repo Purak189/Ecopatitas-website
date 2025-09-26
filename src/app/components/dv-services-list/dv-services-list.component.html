@@ -1,0 +1,18 @@
+<div class="container__primary">
+  <div class="dv-product-list">
+    <div class="dv-product-list__item" *ngFor="let product of services">
+      <div class="dv-product-list__image">
+        <img [src]="product?.image" [alt]="product?.title">
+      </div>
+      <div class="dv-product-list__info">
+        <h1 class="dv-product-list__info-title">{{ product?.title }}</h1>
+        <ul>
+          <li *ngFor="let feature of product?.description">{{ feature }}</li>
+        </ul>
+        <button (click)="openWhatsappQuote(product.title)">
+          Saber más
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

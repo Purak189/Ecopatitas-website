@@ -1,0 +1,74 @@
+.dv-product-list {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+
+  &__item {
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    padding: 80px 0;
+    justify-content: space-between;
+    align-items: center;
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+
+      @media (max-width: 1024px) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      gap: 32px;
+      padding: 40px 0;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__image {
+    max-width: 619px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: start;
+    justify-content: center;
+
+    &-title {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 62px;
+      line-height: 100%;
+      font-weight: 400;
+      color: #2D2D2D;
+
+      @media (max-width: 1024px) {
+        font-size: 32px;
+        text-align: center;
+      }
+    }
+
+    li {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 160%;
+      color: #0F172A;
+    }
+
+    @media (max-width: 1024px) {
+      align-items: center;
+    }
+  }
+}

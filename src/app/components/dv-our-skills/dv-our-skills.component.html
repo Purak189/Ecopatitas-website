@@ -1,0 +1,15 @@
+<div class="dv-our-skills">
+	<div class="container__primary">
+		<div class="dv-our-skills__content">
+			<div class="dv-our-skills__content-item" *ngFor="let skill of skills">
+				<div class="dv-our-skills__content-item__img">
+					<img [src]="skill.img" alt="skill">
+				</div>
+				<div class="dv-our-skills__content-item__title">
+					<p>{{skill.title}}</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

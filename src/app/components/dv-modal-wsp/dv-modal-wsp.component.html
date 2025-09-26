@@ -1,0 +1,15 @@
+<div class="dv-modal-advisor" *ngIf="isVisible" (click)="closeModal()">
+	<div class="modal" [@slideInOut] (click)="$event.stopPropagation()">
+		<div class="modal-content">
+			<h2>Contáctanos</h2>
+			<p>Uno de nuestros asesores te ayudará con lo que necesites.</p>
+			<div class="phone-option" *ngFor="let number of phoneNumbers" (click)="goToWhatsApp(number)">
+				<i class="fa-regular fa-user"></i>
+				<div>
+					<h1>+{{ number }}</h1>
+				</div>
+				<i class="fa-brands fa-whatsapp"></i>
+			</div>
+		</div>
+	</div>
+</div>
