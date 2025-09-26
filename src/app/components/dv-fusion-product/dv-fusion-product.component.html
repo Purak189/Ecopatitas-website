@@ -1,4 +1,4 @@
-<section class="dv-fusion-product" id="promotions">
+<section class="dv-fusion-product" id="caninos">
     <div class="dv-fusion-product__content">
       <h1>PARA CANINOS</h1>
 
@@ -16,7 +16,7 @@
             <div class="dv-fusion-product__content-cards__card__text">
               <h2>{{ card.title }}</h2>
               <h3>s/.{{ card.price | number:'2.2-2'}}</h3>
-              <button class="btn-tertiary-card">COMPRAR</button>
+              <button class="btn-tertiary-card" (click)="navigateToWsp(card.title)">COMPRAR</button>
             </div>
           </div>
         </div>

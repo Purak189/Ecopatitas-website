@@ -82,4 +82,11 @@ export class DvFusionProductComponent {
     });
 
   }
+
+  navigateToWsp(titulo: string) {
+    const phoneNumber = '51981140381'; // Reemplaza con el número de teléfono deseado
+    const message = `Hola, estoy interesado en el producto: ${titulo}. ¿Podrías brindarme más información?`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  }
 }
